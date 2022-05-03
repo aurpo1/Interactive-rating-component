@@ -3,6 +3,8 @@
 }
 
 body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: 'Overpass', sans-serif ;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -21,50 +23,63 @@ body {
   position: relative;
 }
 
-.box .icon {
-  text-align: center;
-  line-height: 52px;
+
+/* main */
+.main {
+  display: none;
+}
+
+.main .box .icon {
+  position: absolute;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: hsla(0, 0%, 100%, .1);
 }
 
-.box .icon img {
-
+.main .box .icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.box h2 {
-  margin: 32px 0 15px 0;
+.main .box h2 {
+  margin: 84px 0 15px 0;
   font-size: 24px;
   font-weight: 700;
   color: #fff;
 }
 
-.box p {
+.main .box p {
   font-size: 15px;
   color: hsl(217, 12%, 63%);
   line-height: 1.5;
 }
 
-.box .num-btns {
+.main .box .num-btns {
   display: flex;
   justify-content: center;
 }
 
-.box .num-btns .num-btn {
+.main .box .num-btns .num-btn {
   background-color: hsla(0, 0%, 100%, .1);
   border-style: none;
   margin: 36px 10px;
   color: hsl(217, 12%, 63%);
   width: 50px;
   height: 50px;
-  line-height: 52px;
   border-radius: 50%;
 }
 
-.box .submit-btn {
-  /* font-family: 'Overpass', sans-serif; */
+.main .box .num-btns .num-btn:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.main .box .submit-btn {
   width: inherit;
   position: absolute;
   bottom: 30px;
@@ -75,6 +90,43 @@ body {
   font-weight: 400;
   color: #fff;
 }
+
+.main .box .submit-btn:hover {
+  background-color: #fff;
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+  transition: .2s;
+}
+
+
+/* thank */
+
+.thank {
+  /* display: none; */
+}
+
+.thank .box .icon {
+
+}
+
+.thank .box .icon img {
+
+}
+
+.thank .box .selected {
+
+}
+
+.thank .box h2 {
+
+}
+
+.thank .box p {
+
+}
+
+
+
 
 .attribution { border: 1px solid white; font-size: 11px; text-align: center; color: #fff;}
 .attribution a { color: hsl(228, 45%, 44%); }

@@ -1,0 +1,12 @@
+* {
+  font-family: 'Overpass', sans-serif ;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: 'Overpass', sans-serif ;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
