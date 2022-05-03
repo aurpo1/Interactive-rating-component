@@ -11,7 +11,7 @@ body {
   justify-content: center; 
 }
 
-.img { display: block; }
+img { display: block; }
 
 .box {
   width: 360px;
@@ -21,6 +21,18 @@ body {
   border-radius: 1.5rem;
   padding: 30px;
   position: relative;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+p {
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+  line-height: 1.5;
 }
 
 
@@ -46,15 +58,10 @@ body {
 
 .main .box h2 {
   margin: 84px 0 15px 0;
-  font-size: 24px;
-  font-weight: 700;
-  color: #fff;
 }
 
 .main .box p {
-  font-size: 15px;
-  color: hsl(217, 12%, 63%);
-  line-height: 1.5;
+
 }
 
 .main .box .num-btns {
@@ -105,24 +112,42 @@ body {
   /* display: none; */
 }
 
-.thank .box .icon {
+.thank .box {
+  text-align: center;
+}
 
+.thank .box .icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
 }
 
 .thank .box .icon img {
 
 }
 
-.thank .box .selected {
+.thank .box .result {
+  display: flex;
+  justify-content: center;
+  margin: 32px;
+}
 
+.thank .box .result .selected {
+  background-color: hsla(0, 0%, 100%, .1);
+  width: 176px;
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 20px;
+  color:hsl(25, 97%, 53%);
 }
 
 .thank .box h2 {
-
+  margin-top: 42px;
 }
 
 .thank .box p {
-
+  margin-top: 16px;
+  padding: 0 10px;
 }
 
 
